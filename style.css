@@ -1,0 +1,435 @@
+/* =========================================================
+   🔹 STYLE.CSS — FINANKU LANDING PAGE
+   ========================================================= */
+
+/* --- RESET DASAR DAN FONT --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   🔹 1️⃣ NAVBAR / HEADER
+   ========================================================= */
+header {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0078ff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0078ff;
+}
+
+.btn-login {
+  background: #0078ff;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background: #005fd1;
+}
+
+/* =========================================================
+   🔹 2️⃣ HERO SECTION
+   ========================================================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: #eaf3ff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e2a5a;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  margin-bottom: 1.5rem;
+  color: #444;
+  max-width: 90%;
+}
+
+.btn-primary {
+  background: #0078ff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #005fd1;
+}
+
+.hero-image img {
+  width: 420px;
+  border-radius: 10px;
+}
+
+/* =========================================================
+   🔹 3️⃣ FITUR UTAMA
+   ========================================================= */
+.features {
+  background: linear-gradient(to bottom, #ffffff, #eaf3ff);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.features h2 {
+  color: #1e2a5a;
+  margin-bottom: 2rem;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature-card {
+  background: white;
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #0078ff;
+  margin-bottom: 0.5rem;
+}
+
+/* =========================================================
+   🔹 4️⃣ WHY US SECTION
+   ========================================================= */
+.why-us {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.why-us h2 {
+  color: #1e2a5a;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.why-us p {
+  color: #0078ff;
+  margin-bottom: 1rem;
+}
+
+.why-us blockquote {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #444;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   🔹 5️⃣ CTA SECTION
+   ========================================================= */
+.cta {
+  text-align: center;
+  background: linear-gradient(to bottom, #eaf3ff, #cfe4ff);
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  color: #1e2a5a;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background: #0078ff;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-cta:hover {
+  background: #005fd1;
+}
+
+/* =========================================================
+   🔹 6️⃣ FOOTER
+   ========================================================= */
+footer {
+  background: #1e2a5a;
+  color: white;
+  padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-about h3,
+.footer-social h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-about p,
+.footer-social ul {
+  font-size: 0.9rem;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social a {
+  color: #cfe4ff;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   🔹 RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================= */
+
+/* --- TABLET MODE (max-width: 992px) --- */
+@media (max-width: 992px) {
+
+  /* Navbar jadi lebih ringkas */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .btn-login {
+    align-self: flex-end;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  /* Features */
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 80%;
+  }
+
+  /* Why Us */
+  .why-us blockquote {
+    max-width: 90%;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 3rem 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+/* --- MOBILE MODE (max-width: 600px) --- */
+@media (max-width: 600px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    display: none; /* disembunyikan, bisa diganti hamburger menu nanti */
+  }
+
+  .btn-login {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 1.5rem;
+    border-radius: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* Features */
+  .features h2 {
+    font-size: 1.3rem;
+  }
+
+  .feature-card {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  /* Why Us */
+  .why-us h2 {
+    font-size: 1.4rem;
+  }
+
+  .why-us blockquote {
+    font-size: 0.95rem;
+  }
+
+  /* CTA */
+  .cta h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn-cta {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+}
+
